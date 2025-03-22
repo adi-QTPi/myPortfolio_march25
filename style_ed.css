@@ -446,7 +446,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         opacity: 1;
         transition: 0.25s ease;
         font-size: 6vh;
-    
     }
     .nav-ed-button:active{
         opacity: 0;
