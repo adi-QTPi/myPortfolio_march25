@@ -67,18 +67,21 @@ html{
 .nav-ed-button{
     font-size:4vh;
     margin-left:10px; margin-right: 10px;
-    background:white;border:none;
+    
+    background:white;
     opacity: 0.7;
     padding-left:5%; padding-right:5%;
+    border: solid 3px teal;
     border-radius:40px;
-
+    color: teal;
     cursor: wait;
 }
 .nav-ed-button:hover{
     opacity: 1;
     transition: 0.25s ease;
-    font-size: 6vh;
-
+    /* font-size: 6vh; */
+    background:teal;
+    color:white;
 }
 .nav-ed-button:active{
     opacity: 0;
@@ -183,7 +186,7 @@ html{
 
 /* style for index.html */
 
-.heading{
+.homepage-heading{
     position:relative; z-index:1;
     text-align:center;
     font-size: 10vh;
@@ -255,14 +258,15 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     width:100%;
 
     background-color: transparent;
-    border: solid 4px rgba(239, 54, 109, 0.857);
-    color:rgba(225,225,225,0.8);
+    border: solid 4px goldenrod;
+    color:goldenrod;
     transition: color 0.4s ease, border-radius 0.9s ease, background-color 0.9s ease;
 }
 .right-home-button:hover{
     border-radius:8vw;
     color:#2E7792;
-    background-color: white;
+    background-color: goldenrod;
+    border-color: #2E7792;
 }
 
 
@@ -288,12 +292,11 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 .clg-content-bg{
     background: #0f2027;
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    /* background-image: url('images/star-bg2.jpg'); */
 }
 .edu-content-bg{
     /* background-image: url('images/star-bg3.jpg'); */
-    background: #ff7e5f;
-    background: linear-gradient(30deg, #0B192C, #1E3E62);
+    background: #0f2027;
+    background: linear-gradient(60deg,#174370dc, #2a629ac2, #ff7e3e9f);
 }
 
 .minibox-heading{
