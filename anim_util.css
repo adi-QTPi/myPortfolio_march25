@@ -9,6 +9,9 @@
   }
 }
 
+.bounce-anim-once{
+  animation:bounce 2s ease;
+}
 .bounce-anim{
     animation: bounce 1s infinite;
 }

@@ -233,7 +233,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     background-color: transparent;
     border: solid 4px rgba(239, 54, 109, 0.857);
     color:rgba(225,225,225,0.8);
-
     transition: color 0.4s ease, border-radius 0.9s ease, background-color 0.9s ease;
 }
 .right-home-button:hover{
