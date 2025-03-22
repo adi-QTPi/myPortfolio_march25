@@ -114,7 +114,7 @@ html{
     justify-content:center;
     column-gap:4%;
     margin-top:5%;
-    filter:blur(3px);
+    /* filter:blur(2px); */
     /* animation: appear-at-scroll ease;
     animation-timeline: view();
     animation-range:entry 0; */
@@ -147,7 +147,7 @@ html{
     object-fit: cover;
     max-height: 30vw;
     width:100%;
-    filter:grayscale(80%) blur(3px);
+    filter:grayscale(80%) blur(2px) hue-rotate(60deg);
 
     border-width:10px; border-style: double;  
     border-color:white;  
@@ -156,8 +156,8 @@ html{
     /* PUT TRANSITION HERE */
     /* border-radius:10%; */
     scale:1.05;
-    filter: grayscale(0) blur(0) brightness(120%);
-    transition: 0.25s ease;
+    filter: grayscale(0) blur(0) brightness(120%) hue-rotate(0);
+    transition: 0.5s ease;
 }
 .image-box>a>img:active{
     filter:invert(80%);
@@ -165,7 +165,7 @@ html{
 .text-box{
     background-color:#1E3E62;
     margin-top:0%; padding-top:4%;
-    color:#FF6500;
+    color:goldenrod;
     /* border-radius: 30px; */
 
     font-size:2.5vh;
@@ -293,7 +293,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 .edu-content-bg{
     /* background-image: url('images/star-bg3.jpg'); */
     background: #ff7e5f;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    background: linear-gradient(30deg, #0B192C, #1E3E62);
 }
 
 .minibox-heading{
@@ -326,6 +326,16 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 }
 
 /* CONTACT ME */
+.full-page{
+    display:flex;
+    background:linear-gradient(60deg, black, rgba(0,0,0,0.7))
+}
+
+.container-rotate{
+    position:relative;
+    height:100vh; width:50%;
+    /* background:linear-gradient(60deg, black, rgba(0,0,0,0.7)); */
+}
 
 .contact-text{
     position:absolute;
@@ -339,10 +349,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     font-size:6vh;
     text-align: center;
 }
-.container{
-    height:100vh; width:100vw;
-    background:linear-gradient(60deg, black, rgba(0,0,0,0.7));
-}
+
 .center-photo{
     transform-origin:center;
     position:absolute; z-index: 1;
@@ -388,6 +395,44 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     transform: translate(-50%, -50%);
     animation: planet-insta 18s infinite linear;
 }
+
+
+
+
+.contact-buttons{
+    background-color: transparent;
+    width:45%;
+    padding-left:10%; padding-right:5%;
+    row-gap:5%;
+    display:flex; flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+.contact-flex-button{
+    background-color:transparent;
+    display:flex;
+    justify-self: center;
+}
+.contact-button-logo{
+    max-height: 15vh;    
+}
+.contact-button-other-half{
+    flex:1;
+    text-align: center;
+    justify-self: center;
+    position:relative;
+}
+.button-name{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+
+    color:#FF6500;
+    font-weight:bold;
+    font-size: 5vh;
+    text-wrap: wrap;
+}
+
 
 @media (max-width: 600px){
     *{
