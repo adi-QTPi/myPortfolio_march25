@@ -1,0 +1,211 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.bounce-anim-once{
+  animation:bounce 2s ease;
+}
+.bounce-anim{
+    animation: bounce 1s infinite;
+}
+
+@keyframes appear-at-scroll{
+  0%{
+    scale:0.2; opacity:(0);
+  }
+  50%{
+    scale:0.8; opacity:(0.5);
+  }
+  100%{
+    scale:1; opacity:1;
+  }
+}
+
+.appear-at-scroll{
+  animation: appear-at-scroll linear;
+  animation-timeline: view();
+  animation-range:entry 0 cover 40%;
+}
+
+
+@keyframes master-ani-left{
+  0%,100%{
+    transform: translateX(-100vw);
+    scale: 0.2;
+  }
+  10%, 90%{
+    transform: translateX(-80vw);
+    scale:0.7;
+  }
+  45%,50%,55%{
+    transform:translateX(05vw);
+    scale:1;
+  }
+}
+
+.master-ani-left{
+  animation: master-ani-left;
+  animation-timeline: view();
+  animation-range: view() cover 100%;
+}
+
+
+@keyframes master-ani-right{
+  0%, 100%{
+    transform: translateX(100vw);
+    scale: 0.2;
+  }
+  10%, 90%{
+    transform: translateX(80vw);
+    scale:0.7;
+  }
+  45%,50%,55%{
+    transform:translateX(-5vw);
+    scale:1;
+  }
+}
+
+.master-ani-right{
+  animation: master-ani-right;
+  animation-timeline: view();
+  animation-range: view() cover 100%;
+}
+
+@keyframes center-image-ani{
+  0%,50%,100%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(0)  ;
+  }
+  25%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(-10deg) ;
+  }
+  75%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(10deg);
+  }
+}
+.center-ani{
+  animation: center-image-ani 3s infinite linear;
+}
+
+@keyframes planet-github{
+  from{
+    
+    transform:translate(-50%, -50%) rotate(0deg) translate(15vw);
+  }
+  to{
+    transform:translate(-50%, -50%) rotate(360deg) translateX(15vw);
+  }
+}
+/* @keyframes planet-slack{
+  from{
+    
+    transform:translate(-50%, -50%) rotate(0deg) translate(20vw);
+  }
+  to{
+    transform:translate(-50%, -50%) rotate(360deg) translate(20vw);
+  }
+} */
+@keyframes planet-gmail{
+  from{
+    
+    transform:translate(-60%, -60%) rotate(0deg) translate(20vw);
+  }
+  to{
+    transform:translate(-60%, -60%) rotate(360deg) translate(20vw);
+  }
+}
+/* @keyframes planet-insta{
+  from{
+    transform:translate(-50%, -50%) rotate(0deg) translate(32vw);
+  }
+  to{
+    transform:translate(-50%, -50%) rotate(360deg) translate(32vw);
+  }
+} */
+
+
+
+/* for media query */
+
+@keyframes center-image-ani{
+  0%,50%,100%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(0)  ;
+  }
+  25%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(-10deg) ;
+  }
+  75%{
+    transform-origin:translate(50%,50%);
+    transform:translate(-50%, -50%) rotate(10deg);
+  }
+}
+.center-ani{
+  animation: center-image-ani 3s infinite linear;
+}
+
+@keyframes planet-github-query{
+  0%{
+    transform:translate(-50%, -50%) rotate(0deg) translateY(-95vw);
+  }
+  95%{
+    transform:translate(-50%, -50%) rotate(95deg) translateY(-95vw);
+  }
+  100%{
+    transform:translate(-50%, -50%) rotate(360deg) translateY(-95vw);
+  }
+}
+@keyframes planet-slack-query{  
+  0%{
+    transform:translate(-50%, -50%) rotate(0deg) translate(47.5vw, -82.2724vw);
+  }
+  60%{
+    transform:translate(-50%, -50%) rotate(70deg) translate(47.5vw, -82.2724vw);
+  }
+  70%{
+    transform:translate(-50%, -50%) rotate(325deg) translate(47.5vw, -82.2724vw);
+  }
+  100%{
+    transform:translate(-50%, -50%) rotate(360deg) translate(47.5vw, -82.2724vw);
+  }
+}
+
+@keyframes planet-gmail-query{
+  0%{
+    transform:translate(-50%, -50%) rotate(0deg) translateY(-47.5vw);
+  }
+  95%{
+    transform:translate(-50%, -50%) rotate(95deg) translateY(-47.5vw);
+  }
+  /* 97.5%{
+    transform:translate(-50%, -50%) rotate(350deg) translateY(-47.5vw);
+
+  } */
+  100%{
+    transform:translate(-50%, -50%) rotate(360deg) translateY(-47.5vw);
+  }
+}
+@keyframes planet-insta-query{  
+  0%{
+    transform:translate(-50%, -50%) rotate(0deg) translate(44.7834vw, -44.7834vw);
+  }
+  47.25%{
+    transform:translate(-50%, -50%) rotate(55deg) translate(44.7834vw, -44.7834vw);
+  }
+  52.5%{
+    transform:translate(-50%, -50%) rotate(305deg) translate(44.7834vw, -44.7834vw);
+  }
+  100%{
+    transform:translate(-50%, -50%) rotate(360deg) translate(44.7834vw, -44.7834vw);
+  }
+}
