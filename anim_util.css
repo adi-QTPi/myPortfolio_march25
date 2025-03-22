@@ -105,7 +105,7 @@
     transform:translate(-50%, -50%) rotate(360deg) translateX(15vw);
   }
 }
-@keyframes planet-slack{
+/* @keyframes planet-slack{
   from{
     
     transform:translate(-50%, -50%) rotate(0deg) translate(20vw);
@@ -113,24 +113,24 @@
   to{
     transform:translate(-50%, -50%) rotate(360deg) translate(20vw);
   }
-}
+} */
 @keyframes planet-gmail{
   from{
     
-    transform:translate(-50%, -50%) rotate(0deg) translate(25vw);
+    transform:translate(-60%, -60%) rotate(0deg) translate(25vw);
   }
   to{
-    transform:translate(-50%, -50%) rotate(360deg) translate(25vw);
+    transform:translate(-60%, -60%) rotate(360deg) translate(25vw);
   }
 }
-@keyframes planet-insta{
+/* @keyframes planet-insta{
   from{
     transform:translate(-50%, -50%) rotate(0deg) translate(32vw);
   }
   to{
     transform:translate(-50%, -50%) rotate(360deg) translate(32vw);
   }
-}
+} */
 
 
 

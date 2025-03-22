@@ -275,7 +275,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 #clg-bg{
     background-image:linear-gradient(60deg, rgb(50, 50,50),rgb(33, 38, 40));
     /* url("images/star-bg1.jpeg") */
-    color:purple;
+    color:goldenrod;
 }
 
 #clg-grid{
@@ -340,14 +340,14 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     /* background:linear-gradient(60deg, black, rgba(0,0,0,0.7)); */
 }
 
-.contact-text{
+.contact-text-home-hyper{
     position:absolute;
     z-index: 2;
-    top:50%; left:50%;
+    top:55%; left:50%;
     transform: translate(-50%, -50%);
     padding-left:2%; padding-right: 2%;
-    color:rgb(139, 31, 139);
-    background: rgba(242, 242, 145, 0.806);
+    color:#FFC26F;
+    background: rgba(40, 40, 2, 0.83);
     border-radius:10px;
     font-size:6vh;
     text-align: center;
@@ -372,32 +372,32 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     top:50%; left:50%;
     width:15vh;height:15vh;
     transform: translate(-50%, -50%);
-    animation: planet-github 11s infinite linear;
+    animation: planet-github 7s infinite linear;
 }
 
-.slack{
+/* .slack{
     position:absolute; z-index: 1;
     top:50%; left:50%;
     width:10vh;height:10vh;
     transform: translate(-50%, -50%);
     animation: planet-slack 13s infinite linear;
-}
+} */
 
 .gmail{
     position:absolute; z-index: 1;
     top:50%; left:50%;
     width:10vh;height:10vh;
     transform: translate(-50%, -50%);
-    animation: planet-gmail 15s infinite linear;
+    animation: planet-gmail 10s infinite linear;
 }
 
-.insta{
+/* .insta{
     position:absolute; z-index: 1;
     top:50%; left:50%;
     width:10vh;height:10vh;
     transform: translate(-50%, -50%);
     animation: planet-insta 18s infinite linear;
-}
+} */
 
 
 
@@ -411,10 +411,17 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     flex-grow: 1;
     justify-content: center;
 }
-.contact-flex-button{
+.contact-button-hyper{
     background-color:transparent;
     display:flex;
     justify-self: center;
+}
+.contact-flex-button{
+
+    background-color:transparent;
+    display:flex;
+    justify-self: center;
+    width:100%;
 }
 .contact-button-logo{
     max-height: 15vh;    
@@ -749,8 +756,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         top:20%; left:50%;
         transform: translate(-50%, -50%);
         padding-left:2%; padding-right: 2%;
-        color:rgb(139, 31, 139);
-        background: rgba(242, 242, 145, 0.806);
+        color:purple;
+        background: transparent;
         border-radius:10px;
         font-size:3vh;
         text-align: center;
@@ -781,13 +788,13 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         animation: planet-github-query 8s infinite linear;
     }
     
-    .slack{
+    /* .slack{
         position:absolute; z-index: 1;
         top:100%; left:0%;
         width:20vw;height:20vw;
         transform: translate(-50%, -50%);
         animation: planet-slack-query 8s infinite linear;
-    }
+    } */
     
     .gmail{
         position:absolute; z-index: 1;
@@ -797,11 +804,11 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         animation: planet-gmail-query 7s infinite linear;
     }
     
-    .insta{
+    /* .insta{
         position:absolute; z-index: 1;
         top:100%; left:0%;
         width:20vw;height:20vw;
         transform: translate(-50%, -50%);
         animation: planet-insta-query 7s infinite linear;
-    }
+    } */
 }
