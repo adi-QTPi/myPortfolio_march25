@@ -435,10 +435,10 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     .nav-ed-button{
         font-size:4vh;
         margin-left:10px; margin-right: 10px;
-        background:white;border:none;
+        background:whitesmoke;border:none;
         opacity: 0.7;
         padding-left:5%; padding-right:5%;
-        border-radius:40%;
+        border-radius:none;
     
         cursor: wait;
     }
