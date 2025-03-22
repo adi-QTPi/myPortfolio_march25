@@ -174,7 +174,7 @@ html{
     margin-top:0%; padding-top:4%;
     color:goldenrod;
     /* border-radius: 30px; */
-
+    font-family:"Roboto";
     font-size:2.5vh;
     text-wrap: wrap;
     width: 50vw;
@@ -213,7 +213,7 @@ background: linear-gradient(59deg, rgba(17, 50, 86, 0.842) 22%, rgba(18,124,149,
     position:relative;
     
     background: rgb(84,86,87);
-background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('images/me-pool.jpg');
+background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('../images/me-pool.jpg');
     
     filter:blur(0.01vw);
 
@@ -246,6 +246,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 .alias{
     font-size:4vh;
     color:grey;
+    font-family: "Play";
 }
 
 
