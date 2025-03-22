@@ -269,8 +269,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     /* font-family: "Sofia", sans-serif; */
     text-shadow: 3px 3px 3px #666666;;
     background-color: transparent;
-    border: solid 4px goldenrod;
-    color:goldenrod;
+    border: solid 4px rgba(218, 165, 32,0.8);
+    color:rgba(218, 165, 32,0.8);
     transition: color 0.4s ease, border-radius 0.9s ease, background-color 0.9s ease;
 }
 .right-home-button:hover{
@@ -485,6 +485,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         background-size: cover;
         /* background-color: #003153; */
         background-image:linear-gradient(315deg, #003153 0%, #0abab5 74%);
+        color:goldenrod;
     }
     
     .sticky-text{
@@ -493,6 +494,9 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         text-align:center;
         font-size:60px;
         padding-left:10px; padding-right: 10px;
+        font-family: "Merienda";
+    text-shadow: 5px 5px 5px rgba(85, 80, 69, 0.599);
+    font-weight: 700;
     }
     .scroll-down-indicator{
         position:sticky;
@@ -527,17 +531,19 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     .nav-ed-button{
         font-size:4vh;
         margin-left:10px; margin-right: 10px;
-        background:whitesmoke;border:none;
+        background:white;
         opacity: 0.7;
         padding-left:5%; padding-right:5%;
-        border-radius:none;
-    
+        border-radius:40%;
+        border: solid 3px teal;
+        color:teal;
         cursor: wait;
     }
     .nav-ed-button:hover{
         opacity: 1;
         transition: 0.25s ease;
-        font-size: 6vh;
+        background:teal;
+    color:white;
     }
     .nav-ed-button:active{
         opacity: 0;
@@ -584,6 +590,14 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         /* max-height:30vh; */
         align-self:center;
     }
+    .image-box-on-left>a>img{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .image-box-on-right>a>img{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
     .margin-left{
         margin-left:15%;
     }
@@ -595,7 +609,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         border-radius:50%;
         max-height: 30vw;
         width:100%;
-    
+        
         border-width:10px; border-style: double;  
         border-color:white;  
     }
@@ -618,7 +632,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     
     /* style for index.html */
     
-    .heading{
+    .homepage-heading{
         position:relative; z-index:1;
         text-align:center;
         font-size: 8vh;
@@ -637,7 +651,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         position:relative;
         
         background: rgb(84,86,87);
-    background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('images/me-pool.jpg');
+    background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('../images/me-pool.jpg');
         
         filter:blur(0.01vw);
     
@@ -670,6 +684,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     .alias{
         font-size:4vh;
         color:grey;
+        font-family: "Play";
     }
     
     
@@ -688,10 +703,12 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         margin-top: 5vh;
         font-size:170%;
         width:100%;
-    
+        font-family: "Merienda";
+        /* font-family: "Sofia", sans-serif; */
+        text-shadow: 3px 3px 3px #666666;;
         background-color: transparent;
-        border: solid 4px rgba(239, 54, 109, 0.857);
-        color:rgba(225,225,225,0.8);
+        border: solid 4px rgba(218, 165, 32,0.8);
+        color:rgba(218, 165, 32,0.8);
     
         transition: color 0.4s ease, border-radius 0.9s ease, background-color 0.9s ease;
     }
