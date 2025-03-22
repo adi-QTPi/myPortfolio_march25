@@ -371,7 +371,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     top:50%; left:50%;
     width:20vw;height:30vh;
     transform: translate(-50%, -50%);
-    background-image:url('images/me-convo.png');
+    background-image:url('../images/me-convo.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -497,6 +497,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         font-family: "Merienda";
     text-shadow: 5px 5px 5px rgba(85, 80, 69, 0.599);
     font-weight: 700;
+    color:goldenrod;
     }
     .scroll-down-indicator{
         position:sticky;
@@ -529,12 +530,12 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         justify-content:space-between;
     }
     .nav-ed-button{
-        font-size:4vh;
+        font-size:3vh;
         margin-left:10px; margin-right: 10px;
         background:white;
         opacity: 0.7;
         padding-left:5%; padding-right:5%;
-        border-radius:40%;
+        border-radius:40px;
         border: solid 3px teal;
         color:teal;
         cursor: wait;
@@ -606,10 +607,9 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     }
     .image-box>a>img{
         object-fit: cover;
-        border-radius:50%;
         max-height: 30vw;
         width:100%;
-        
+        filter:none;
         border-width:10px; border-style: double;  
         border-color:white;  
     }
@@ -622,12 +622,20 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     .text-box{
         background-color:#1E3E62;
         margin-top:0%; padding-top:4%;
-        color:#FF6500;
-        border-radius: 30px;
+        color:goldenrod;
     
-        font-size:2.5vh;
+        font-size:125%;
         text-wrap: wrap;
         width: 50vw;
+    }
+    .text-box-on-right{
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-left:3%;
+    }
+    .text-box-on-left{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
     
     /* style for index.html */
@@ -745,8 +753,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     }
     .edu-content-bg{
         /* background-image: url('images/star-bg3.jpg'); */
-        background: #ff7e5f;
-        background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+        background: #0f2027;
+    background: linear-gradient(60deg,#174370dc, #2a629ac2, #ff7e3e9f)
     }
     
     .minibox-heading{
@@ -802,7 +810,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         top:20%; left:50%;
         width:60vw;height:30vh;
         transform: translate(-50%, -50%);
-        background-image:url('images/me-convo.png');
+        background-image:url('');
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
@@ -841,4 +849,88 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
         transform: translate(-50%, -50%);
         animation: planet-insta-query 7s infinite linear;
     } */
+
+    .full-page{
+        position: fixed; 
+        top:0; bottom:0; left:0; right:0;
+        display:flex;
+        flex-direction: column;
+        background:linear-gradient(60deg, black, rgba(0,0,0,0.7))
+    }
+    
+    .container-rotate{
+        position:relative;
+        height:30vh; width:100%;
+        /* background:linear-gradient(60deg, black, rgba(0,0,0,0.7)); */
+    }
+    
+    .contact-text-home-hyper{
+        position:absolute;
+        z-index: 2;
+        top:55%; left:50%;
+        transform: translate(-50%, -50%);
+        padding-left:2%; padding-right: 2%;
+        color:#FFC26F;
+        background: rgba(40, 40, 2, 0.83);
+        border-radius:10px;
+        font-size:6vh;
+        text-align: center;
+        font-family: "Merienda"; 
+    }
+    
+    .center-photo{
+        transform-origin:center;
+        position:absolute; z-index: 1;
+        top:50%; left:50%;
+        width:20vw;height:30vh;
+        transform: translate(-50%, -50%);
+        background-image:url('');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius:50%;
+        /* border: solid 0.5vw whitesmoke; */
+    }
+    
+    .contact-buttons{
+        background-color: transparent;
+        width:90%;
+        padding-left:5%; padding-right:5%;
+        row-gap:5%;
+        display:flex; flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .contact-button-hyper{
+        background-color:transparent;
+        display:flex;
+        justify-self: center;
+    }
+    .contact-flex-button{
+    
+        background-color:transparent;
+        display:flex;
+        justify-self: center;
+        width:100%;
+    }
+    .contact-button-logo{
+        max-height: 15vh;    
+    }
+    .contact-button-other-half{
+        flex:1;
+        text-align: center;
+        justify-self: center;
+        position:relative;
+    }
+    .button-name{
+        position:absolute;
+        top:50%; left:50%;
+        transform:translate(-50%,-50%);
+    
+        color:#FF6500;
+        font-weight:bold;
+        font-size: 5vh;
+        text-wrap: wrap;
+        font-family: "Play";
+    }
 }
