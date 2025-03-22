@@ -361,6 +361,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     border-radius:10px;
     font-size:6vh;
     text-align: center;
+    font-family: "Merienda"; 
 }
 
 .center-photo{
