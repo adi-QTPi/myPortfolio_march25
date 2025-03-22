@@ -152,7 +152,7 @@ html{
 }
 .image-box>a>img{
     object-fit: cover;
-    max-height: 30vw;
+    height: 30vw;
     width:100%;
     filter:grayscale(80%) blur(2px) hue-rotate(60deg);
 
@@ -621,10 +621,10 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     }
     .text-box{
         background-color:#1E3E62;
-        margin-top:0%; padding-top:4%;
+        margin-top:0%; padding-top:4%;padding-bottom:4%; padding-right:4%; padding-left:4%;
         color:goldenrod;
     
-        font-size:125%;
+        font-size:100%;
         text-wrap: wrap;
         width: 50vw;
     }
