@@ -125,6 +125,14 @@ html{
     /* max-height:30vh; */
     align-self:center;
 }
+.image-box-on-left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.image-box-on-right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .margin-left{
     margin-left:15%;
 }
@@ -133,7 +141,6 @@ html{
 }
 .image-box>a>img{
     object-fit: cover;
-    border-radius:50%;
     max-height: 30vw;
     width:100%;
 
