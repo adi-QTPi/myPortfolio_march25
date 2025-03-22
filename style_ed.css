@@ -370,6 +370,9 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     *{
         padding:0; margin:0;
     }
+    html{
+    overflow-x: hidden;
+    }
     .body{
         display:flex;
         flex-direction: column;
