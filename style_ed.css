@@ -25,6 +25,7 @@ html{
     background-size: cover;
     /* background-color: #003153; */
     background-image:linear-gradient(315deg, #003153 0%, #0abab5 74%);
+    color:goldenrod;
 }
 
 .sticky-text{
@@ -33,6 +34,9 @@ html{
     text-align:center;
     font-size:60px;
     padding-left:10px; padding-right: 10px;
+    font-family: "Merienda";
+    text-shadow: 5px 5px 5px rgba(85, 80, 69, 0.599);
+    font-weight: 700;
 }
 .scroll-down-indicator{
     position:sticky;
@@ -191,6 +195,10 @@ html{
     text-align:center;
     font-size: 10vh;
     color:goldenrod;
+    /* font-family: "Audiowide", sans-serif; */
+    font-family: "Play";
+
+    text-shadow: 3px 8px 8px rgb(46 91 173 / 0.6);
 }
 .homespace{
     display:flex;
@@ -256,7 +264,9 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     margin-top: 5vh;
     font-size:170%;
     width:100%;
-
+    font-family: "Merienda";
+    /* font-family: "Sofia", sans-serif; */
+    text-shadow: 3px 3px 3px #666666;;
     background-color: transparent;
     border: solid 4px goldenrod;
     color:goldenrod;
@@ -264,7 +274,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 }
 .right-home-button:hover{
     border-radius:8vw;
-    color:#2E7792;
+    color:#2e5360;
     background-color: goldenrod;
     border-color: #2E7792;
 }
@@ -441,6 +451,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     font-weight:bold;
     font-size: 5vh;
     text-wrap: wrap;
+    font-family: "Play";
 }
 
 
