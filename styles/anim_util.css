@@ -118,7 +118,22 @@
   animation: icon-glitch 1s infinite;
 }
 
+@keyframes reveal {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+.reveal-ani{
+  animation: reveal 2s ease-in-out;
+}
 
+
+
+
+/* ROTATING STUFF */
 
 @keyframes center-image-ani{
   0%,50%,100%{
