@@ -48,15 +48,19 @@
 
 @keyframes master-ani-left{
   0%,100%{
-    transform: translateX(-100vw);
-    scale: 0.2;
+    opacity:0;
+    transform: translateX(-85vw);
+    left:0;
+    scale: 0;
   }
   10%, 90%{
-    transform: translateX(-80vw);
-    scale:0.7;
+    opacity:70%;
+    transform: translateX(-45vw);
+    scale:0.4;
   }
   45%,50%,55%{
-    transform:translateX(05vw);
+    opacity:100%;
+    transform:translateX(0);
     scale:1;
   }
 }
@@ -70,15 +74,18 @@
 
 @keyframes master-ani-right{
   0%, 100%{
-    transform: translateX(100vw);
-    scale: 0.2;
+    opacity:0;
+    transform: translateX(85vw);
+    scale: 0;
   }
   10%, 90%{
-    transform: translateX(80vw);
-    scale:0.7;
+    opacity:70%;
+    transform: translateX(45vw);
+    scale:0.4;
   }
   45%,50%,55%{
-    transform:translateX(-5vw);
+    opacity:100%;
+    transform:translateX(0);
     scale:1;
   }
 }
@@ -88,6 +95,30 @@
   animation-timeline: view();
   animation-range: view() cover 100%;
 }
+
+@keyframes icon-glitch {
+  0% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
+  }
+  25% {
+    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
+  }
+  50% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
+  }
+  75% {
+    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
+  }
+  100% {
+    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
+  }
+}
+
+.icon-glitch{
+  animation: icon-glitch 1s infinite;
+}
+
+
 
 @keyframes center-image-ani{
   0%,50%,100%{
