@@ -721,6 +721,12 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     border-color:#276364;
 }
 
+.image-box{
+    max-width:35%;
+    /* max-height:30vh; */
+    /* align-self:center; */
+}
+
 .text-box-heading{
     font-size:1.4rem;
 }
