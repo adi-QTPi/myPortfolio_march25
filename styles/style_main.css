@@ -682,7 +682,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 
 /* media queries */
 
-@media (max-width:650px){
+@media (max-width:800px){
 
 /* for index.html */
 .homepage-heading{
