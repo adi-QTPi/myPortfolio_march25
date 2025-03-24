@@ -96,28 +96,6 @@
   animation-range: view() cover 100%;
 }
 
-@keyframes icon-glitch {
-  0% {
-    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
-  }
-  25% {
-    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
-  }
-  50% {
-    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
-  }
-  75% {
-    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
-  }
-  100% {
-    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
-  }
-}
-
-.icon-glitch{
-  animation: icon-glitch 1s infinite;
-}
-
 @keyframes reveal {
   from{
     opacity:0;
@@ -129,69 +107,6 @@
 .reveal-ani{
   animation: reveal 2s ease-in-out;
 }
-
-
-
-
-/* ROTATING STUFF */
-
-@keyframes center-image-ani{
-  0%,50%,100%{
-    transform-origin:translate(50%,50%);
-    transform:translate(-50%, -50%) rotate(0)  ;
-  }
-  25%{
-    transform-origin:translate(50%,50%);
-    transform:translate(-50%, -50%) rotate(-10deg) ;
-  }
-  75%{
-    transform-origin:translate(50%,50%);
-    transform:translate(-50%, -50%) rotate(10deg);
-  }
-}
-.center-ani{
-  animation: center-image-ani 3s infinite linear;
-}
-
-@keyframes planet-github{
-  from{
-    
-    transform:translate(-50%, -50%) rotate(0deg) translate(15vw);
-  }
-  to{
-    transform:translate(-50%, -50%) rotate(360deg) translateX(15vw);
-  }
-}
-/* @keyframes planet-slack{
-  from{
-    
-    transform:translate(-50%, -50%) rotate(0deg) translate(20vw);
-  }
-  to{
-    transform:translate(-50%, -50%) rotate(360deg) translate(20vw);
-  }
-} */
-@keyframes planet-gmail{
-  from{
-    
-    transform:translate(-60%, -60%) rotate(0deg) translate(20vw);
-  }
-  to{
-    transform:translate(-60%, -60%) rotate(360deg) translate(20vw);
-  }
-}
-/* @keyframes planet-insta{
-  from{
-    transform:translate(-50%, -50%) rotate(0deg) translate(32vw);
-  }
-  to{
-    transform:translate(-50%, -50%) rotate(360deg) translate(32vw);
-  }
-} */
-
-
-
-/* for media query */
 
 @keyframes center-image-ani{
   0%,50%,100%{
@@ -244,10 +159,6 @@
   95%{
     transform:translate(-50%, -50%) rotate(95deg) translateY(-47.5vw);
   }
-  /* 97.5%{
-    transform:translate(-50%, -50%) rotate(350deg) translateY(-47.5vw);
-
-  } */
   100%{
     transform:translate(-50%, -50%) rotate(360deg) translateY(-47.5vw);
   }
@@ -267,20 +178,18 @@
   }
 }
 
+@media all and (max-width:40.625rem) {
 
-
-@media all and (max-width:650px) {
-
-.master-ani-right{
-  animation: appear-at-scroll linear;
-  animation-timeline: view();
-  animation-range: view() cover 4%;
-}
-
-.master-ani-left{
+  .master-ani-right{
     animation: appear-at-scroll linear;
     animation-timeline: view();
     animation-range: view() cover 4%;
-}
+  }
+
+  .master-ani-left{
+      animation: appear-at-scroll linear;
+      animation-timeline: view();
+      animation-range: view() cover 4%;
+  }
 
 }

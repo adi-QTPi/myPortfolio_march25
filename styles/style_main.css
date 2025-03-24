@@ -36,20 +36,15 @@ html{
     background-color:#DAC4D0;
 }
 
-/* .sticky-outer-layer{
-    position:relative;
-} */
-
 .ed-sticky-text{
     position:sticky; overflow: hidden;
     z-index:1;
     top: 5%;
     text-align:center;
     background-color: beige;
-    font-size:60px;
-    padding-left:10px; padding-right: 10px;
+    font-size:3.75rem;
+    padding-left:0.625rem; padding-right: 0.625rem;
     font-family: "Oswald";
-    /* text-shadow: 5px 5px 5px rgba(85, 80, 69, 0.599); */
     font-weight: 700;
 }
 
@@ -59,10 +54,9 @@ html{
     top: 5%;
     text-align:center;
     background-color: #DAC4D0;
-    font-size:60px;
-    padding-left:10px; padding-right: 10px;
+    font-size:3.75rem;
+    padding-left:0.625rem; padding-right: 0.625rem;
     font-family: "Oswald";
-    /* text-shadow: 5px 5px 5px rgba(85, 80, 69, 0.599); */
     font-weight: 700;
 }
 
@@ -94,28 +88,27 @@ html{
     overflow: hidden;
     background-color:transparent;
 
-    padding-top:10px;
+    padding-top:0.625rem;
     display: flex;
     justify-content:space-between;
 }
 
 .nav-button{
     font-size:4vh; font-weight: bold;
-    margin-left:10px; margin-right: 10px;
+    margin-left:0.625rem; margin-right: 0.625rem;
     opacity: 0.7;
     padding-left:5%; padding-right:5%;
-    /* border: solid 3px #C14725; */
-    border-radius:40px;
-    /* color: #C14725; */
-    cursor: wait;
+    border-radius: 2.5rem;;
+    cursor:cell;
 }
 .nav-ed-button{
-    border: solid 3px #C14725;
+    border-radius:2rem;
+    border: solid 0.188rem #C14725;
     background-color: rgba(245, 245, 220,0.9);
     color: #C14725;
 }
 .nav-clg-button{
-    border: solid 3px #1d4747;
+    border: solid 0.188rem #1d4747;
     background-color: rgba(218, 196, 208,0.9);
     color: #1d4747;
 }
@@ -123,7 +116,6 @@ html{
 .nav-button:hover{ 
     opacity: 1;
     transition: 0.25s ease;
-    /* font-size: 6vh; */
 }
 .nav-ed-button:hover{
     transition: 0.25s ease;
@@ -158,9 +150,6 @@ html{
     "flex"
     "flex"
     "flex";
-    /* row-gap: 5%; */
-
-    /* DELETABLE */
     background-color: transparent;
 }
 .ed-big-flex{
@@ -176,29 +165,19 @@ html{
     justify-content:center;
     column-gap:4%;
     margin-top:5%;
-    /* filter:blur(2px); */
-    /* animation: appear-at-scroll ease;
-    animation-timeline: view();
-    animation-range:entry 0; */
 }
-
-/* .flex-in-grid:hover{
-    transition: 0.5s ease;
-    filter:blur(0);
-} */
 
 .image-box{
     max-width:35%;
-    /* max-height:30vh; */
     align-self:center;
 }
 .image-box-on-left>a>img{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
 }
 .image-box-on-right>a>img{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
 }
 .margin-left{
     margin-left:15%;
@@ -210,13 +189,11 @@ html{
     object-fit: cover;
     height: 30vw;
     width:100%;
-    filter:blur(4px) hue-rotate(45deg);
+    filter:blur(0.25rem) hue-rotate(45deg);
 
-    border-width:5px; border-style: solid;  
+    border-width:5; border-style: solid;  
 }
 .image-box>a>img:hover{
-    /* PUT TRANSITION HERE */
-    /* border-radius:10%; */
     scale:1.01;
     filter: grayscale(0) blur(0) brightness(100%) hue-rotate(0);
     transition: 0.75s ease;
@@ -255,7 +232,7 @@ html{
 }
 .text-box-content{
     font-family: "Jaini", system-ui;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
     font-weight: 100;
 }
 
@@ -275,8 +252,8 @@ html{
     padding-top:4%; 
     padding-bottom:4%;
 
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
 }
 .text-box-on-left{
     padding-left:4%;
@@ -285,11 +262,9 @@ html{
     padding-bottom:4%;
 
 
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
 }
-
-/* style for index.html */
 
 #index-body{
     background-color: #d7ccbb;
@@ -298,38 +273,21 @@ html{
 .homepage-heading{
     position:relative; z-index:1;
     text-align:center;
-    /* font-size: 10vh; */
     color: #1A3636;
     font-family: "Oswald"; font-size: 10vh;
-    letter-spacing: 4px; 
+    letter-spacing: 0.25rem; 
     background-color: #d7ccbb;
-
     height: 15vh;
-    /* text-shadow: 3px 8px 8px rgb(46 91 173 / 0.6); */
 }
 .homespace{
     display:flex;
-    /* padding-top:15vh; */
     height: 85vh;
-    /* background: rgb(38,37,38);
-    background: linear-gradient(59deg, rgba(17, 50, 86, 0.842) 22%, rgba(18,124,149,1) 74%, rgba(222,192,5,0) 100%);
-    */
     background-color: #d7ccbb;
-    
-
-    /* position:fixed;
-    top:15; right:0; 
-    left:0; bottom:0; */
 }
 .left-home{
     position:relative;
-    
-    /* background: rgb(84,86,87);
-background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('../images/me-pool.jpg');
-     */
     background-image: linear-gradient(45deg, #d7ccbb,#d7ccbb29, #d7ccbb00), url(../images/me-pool.jpg);
     filter:blur(0.01vw);
-
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
@@ -349,7 +307,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     width:80%;
     text-align:right;
 
-    border-top-left-radius: 35px;
+    border-top-left-radius: 2.188rem;
 }
 
 .name{
@@ -379,8 +337,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     width: 60%; height: 10vh;
     align-self: center;
     text-align:center;
-    border: solid 3px #1A3636;
-    border-radius: 20px;
+    border: solid 0.188rem #1A3636;
+    border-radius: 1.25rem;
     /* how to vertically align text? */
     /* padding-top:5vh; padding: bottom 5vh;  */
     padding-left:1vw; padding-right: 1vw;
@@ -388,7 +346,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     color:#1A3636;
     font-size: 3vh; text-decoration: none;
 
-    font-family: "Fredericka the Great", serif; letter-spacing: 2px;
+    font-family: "Fredericka the Great", serif; letter-spacing: 0.125rem;
 }
 .homepage-link:hover{
     transition:0.35s ease;
@@ -397,13 +355,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     scale: 1.04;
 }
 
-
-/* styles for clg.html */
-
 #clg-bg{
     background-image:linear-gradient(60deg, rgb(50, 50,50),rgb(33, 38, 40));
-    /* url("images/star-bg1.jpeg") */
-    color:goldenrod;
 }
 
 #clg-grid{
@@ -422,7 +375,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
 .edu-content-bg{
-    /* background-image: url('images/star-bg3.jpg'); */
     background: #0f2027;
     background: linear-gradient(60deg,#174370dc, #2a629ac2, #ff7e3e9f);
 }
@@ -439,14 +391,12 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 }
 .contact{
     font-size: 3vh;
-
     padding-left:4vw; padding-right: 4vw; padding-top:1vh;
     background-color: purple;
     height:5vh; width: auto;
     color: whitesmoke;
     transition:color 0.4s ease, background-color 0.4s ease, padding 0.4s ease;
-
-    border-radius:25px;
+    border-radius:1.563rem;
 }
 .contact:hover{
     padding-left:7vw; padding-right: 7vw;
@@ -456,9 +406,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     background-color: whitesmoke;
 }
 
-/* FOOTER OF CONTACT */
 .footer{
-    /* position:relative; */
     bottom:0; left:0; right:0;
     display:flex; flex-direction: column;
     justify-content: center;
@@ -490,8 +438,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     display:flex;
     justify-content: center;
     width:40%; height: 100%;
-    /* background-size: cover;
-    background-position: top; */
 }
 
 .my-photo{
@@ -499,7 +445,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     object-fit:scale-down;
     height:100%;
     object-position: top;
-    /* overflow: hidden; */
 }
 
 .contact-button-flex{
@@ -508,15 +453,14 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     width: 40%;
     justify-content: space-around;
     align-items: center;
-    row-gap: 6px;
+    row-gap: 0.375rem;
 }
 
 .footer-contact-button{
     position:relative;
     display: flex; flex-direction: row; flex-grow: 1;
-    border: solid 2px transparent; border-radius: 5px;
+    border: solid 0.125rem transparent; border-radius: 0.313rem;
     height: 25%; width:80%;
-    /* justify-content: ; */
 }
 .clg-footer-contact-button:hover{
     transition: 0.15s linear;
@@ -546,35 +490,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     position: absolute;
     left:2%; top:50%; transform: translateY(-50%);
 
-    height: 40px;
+    height: 2.5rem;
     width: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTACT ME */
-.full-page{
-    display:flex;
-    background:linear-gradient(60deg, black, rgba(0,0,0,0.7))
-}
-
-.container-rotate{
-    position:relative;
-    height:100vh; width:50%;
-    /* background:linear-gradient(60deg, black, rgba(0,0,0,0.7)); */
 }
 
 .contact-text-home-hyper{
@@ -585,7 +502,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     padding-left:2%; padding-right: 2%;
     color:#FFC26F;
     background: rgba(40, 40, 2, 0.83);
-    border-radius:10px;
+    border-radius:0.625rem;
     font-size:6vh;
     text-align: center;
     font-family: "Merienda"; 
@@ -602,7 +519,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     background-repeat: no-repeat;
     background-size: cover;
     border-radius:50%;
-    /* border: solid 0.5vw whitesmoke; */
 }
 
 .github{
@@ -682,85 +598,69 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     font-family: "Play";
 }
 
+@media all and (max-width:50rem){
+    .homepage-heading{
+        font-size:5.5rem;
+        height: 35vh;
+    }
+    .homespace{
+        height: 65vh;
+    }
 
+    .right-home{  
+        height: auto;
+    }
 
-/* media queries */
+    .homepage-link{
+        width:40vw;
+        font-size: 1rem;
+    }
 
-@media all and (max-width:800px){
+    .image-box>a>img{
+        filter:blur(0) hue-rotate(0);
+        border-width:0.313rem; border-style: solid;
+    }
 
-/* for index.html */
-.homepage-heading{
-    font-size:5.5rem;
-    height: 35vh;
-}
-.homespace{
-    height: 65vh;
-}
+    .ed-image-box>a>img{
+        border-color:#CE744D;
+    }
+    .clg-image-box>a>img{
+        border-color:#276364;
+    }
 
-.right-home{  
-    height: auto;
-}
+    .image-box{
+        max-width:35%;
+    }
 
-.homepage-link{
-    width:40vw;
-    /* font-size:2vh; */
-    font-size: 1rem;
-}
-
-    /* for education.html */
-
-.image-box>a>img{
-    filter:blur(0px) hue-rotate(0);
-    border-width:5px; border-style: solid;
-}
-
-.ed-image-box>a>img{
-    border-color:#CE744D;
-}
-.clg-image-box>a>img{
-    border-color:#276364;
-}
-
-.image-box{
-    max-width:35%;
-    /* max-height:30vh; */
-    /* align-self:center; */
-}
-
-.text-box-heading{
-    font-size:1.4rem;
-}
-.text-box-content{
-    font-size:1rem;
-}
-.footer-heading{
-    width:auto;
-}
-.footer-contact-button>div{
-    font-size:1rem;
-    position:absolute;
-    left:50%; top:50%;
-    transform:translate(-10%, -50%);
-}
-
+    .text-box-heading{
+        font-size:1.4rem;
+    }
+    .text-box-content{
+        font-size:1rem;
+    }
+    .footer-heading{
+        width:auto;
+    }
+    .footer-contact-button>div{
+        font-size:1rem;
+        position:absolute;
+        left:50%; top:50%;
+        transform:translate(-10%, -50%);
+    }
 }
 
 
 
 
-@media all and (max-width:380px){
+@media all and (max-width:23.75rem){
 
-/* .homespace{
-    padding-top:30vh;
-} */
+    .homespace{
+        height: 85vh;
+    }
 
-.homespace{
-    height: 85vh;
-}
-
-.homepage-heading{
-    font-size:3rem;
-    height: 15vh;
-}
+    .homepage-heading{
+        font-size:3rem;
+        height: 15vh;
+    }
     
 }
