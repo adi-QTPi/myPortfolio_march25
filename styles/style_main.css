@@ -291,6 +291,10 @@ html{
 
 /* style for index.html */
 
+#index-body{
+    background-color: #d7ccbb;
+}
+
 .homepage-heading{
     position:relative; z-index:1;
     text-align:center;
