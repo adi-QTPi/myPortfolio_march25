@@ -349,14 +349,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     font-family: "Play";
 }
 
-
-.right-home{
-    display:flex;flex-direction:column;
-    width:40%;
-
-    padding-left:5%;
-}
-.right-home-button{
+/* .right-home-button{
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     border-bottom-left-radius: 5vw;
@@ -366,7 +359,6 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     font-size:170%;
     width:100%;
     font-family: "Merienda";
-    /* font-family: "Sofia", sans-serif; */
     text-shadow: 3px 3px 3px #666666;;
     background-color: transparent;
     border: solid 4px rgba(218, 165, 32,0.8);
@@ -378,6 +370,29 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     color:#2e5360;
     background-color: goldenrod;
     border-color: #2E7792;
+} */
+
+.right-home{
+    padding-top:3vh;
+    padding-bottom:3vh;
+
+    display:flex;flex-direction:column;
+    width:40%; height:80vh;
+    justify-content: space-around;
+    padding-left:5%;   
+    row-gap: 4vh;
+}
+
+.homepage-link{
+    width: 60%; height: 10vh;
+    align-self: center;
+    text-align:center;
+    border: solid 2px red;
+    border-radius: 20px;
+
+    /* how to vertically align text? */
+    padding-top:5vh; padding: bottom 5vh; 
+    padding-left:5px; padding-right: 5px;
 }
 
 
