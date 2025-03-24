@@ -478,7 +478,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     height:40vh;
 }
 .footer-ed{
-    background-color: #D48862;
+    background-color: #d48862ca;
 }
 .footer-clg{
     background-color: #538085dc;
@@ -518,22 +518,50 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 .contact-button-flex{
     display:flex;
     flex-direction: column;
-    width: 100%;
+    width: 40%;
     justify-content: space-around;
     align-items: center;
+    row-gap: 6px;
 }
 
 .footer-contact-button{
     position:relative;
     display: flex; flex-direction: row; flex-grow: 1;
-    border: solid 2px red;
+    border: solid 2px transparent; border-radius: 5px;
     height: 25%; width:80%;
     /* justify-content: ; */
 }
-.footer-contact-button>img{
-    object-fit: scale-down;
+.clg-footer-contact-button:hover{
+    transition: 0.15s linear;
+    border-color: rgb(77, 202, 233);
+}
+.ed-footer-contact-button:hover{
+    transition: 0.15s linear;
+    border-color: rgb(190, 23, 76);
+}
+.footer-contact-button>div{
+    position: absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -50%);
+
+    font-family:"Iansui", cursive;
+    font-size: 3vh;
+    font-weight: 700;
 }
 
+.clg-footer-contact-button>div{
+    color:black;
+}
+.ed-footer-contact-button>div{
+    color:black;
+}
+.footer-contact-button>img{
+    position: absolute;
+    left:2%; top:50%; transform: translateY(-50%);
+
+    height: 40px;
+    width: auto;
+}
 
 
 
