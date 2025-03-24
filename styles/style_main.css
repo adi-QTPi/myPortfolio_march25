@@ -700,8 +700,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     }
     
     
-    .
-    -ed{
+    .nav-ed{
         position:sticky;z-index: 1;
         top:0;
         overflow: hidden;
