@@ -699,7 +699,8 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 
 .homepage-link{
     width:40vw;
-    font-size:2vh;
+    /* font-size:2vh; */
+    font-size: 1rem;
 }
 
     /* for education.html */
