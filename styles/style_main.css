@@ -682,7 +682,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 
 /* media queries */
 
-@media (max-width:800px){
+@media all and (max-width:800px){
 
 /* for index.html */
 .homepage-heading{
@@ -737,7 +737,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 
 
 
-@media (max-width:380px){
+@media all and (max-width:380px){
 
 /* .homespace{
     padding-top:30vh;

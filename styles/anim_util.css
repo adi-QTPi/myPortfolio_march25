@@ -269,7 +269,7 @@
 
 
 
-@media (max-width:650px) {
+@media all and (max-width:650px) {
 
 .master-ani-right{
   animation: appear-at-scroll linear;
