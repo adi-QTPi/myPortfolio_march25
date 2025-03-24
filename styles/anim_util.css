@@ -266,3 +266,21 @@
     transform:translate(-50%, -50%) rotate(360deg) translate(44.7834vw, -44.7834vw);
   }
 }
+
+
+
+@media (max-width:650px) {
+
+.master-ani-right{
+  animation: appear-at-scroll linear;
+  animation-timeline: view();
+  animation-range: view() cover 4%;
+}
+
+.master-ani-left{
+    animation: appear-at-scroll linear;
+    animation-timeline: view();
+    animation-range: view() cover 4%;
+}
+
+}
