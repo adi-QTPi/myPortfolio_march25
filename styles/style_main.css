@@ -294,27 +294,30 @@ html{
     position:relative; z-index:1;
     text-align:center;
     font-size: 10vh;
-    color:goldenrod;
-    /* font-family: "Audiowide", sans-serif; */
-    font-family: "Play";
-
-    text-shadow: 3px 8px 8px rgb(46 91 173 / 0.6);
+    color: #1A3636;
+    font-family: "Oswald"; font-size: 10vh;
+    letter-spacing: 4px; 
+    /* text-shadow: 3px 8px 8px rgb(46 91 173 / 0.6); */
 }
 .homespace{
     display:flex;
     padding-top:15vh;
-    background: rgb(38,37,38);
-background: linear-gradient(59deg, rgba(17, 50, 86, 0.842) 22%, rgba(18,124,149,1) 74%, rgba(222,192,5,0) 100%);
-    height:100%;
+    /* background: rgb(38,37,38);
+    background: linear-gradient(59deg, rgba(17, 50, 86, 0.842) 22%, rgba(18,124,149,1) 74%, rgba(222,192,5,0) 100%);
+    */
+    background-color: #d7ccbb;
+    
+    height:100%; 
     position:fixed;
     top:0; right:0; left:0; bottom:0;
 }
 .left-home{
     position:relative;
     
-    background: rgb(84,86,87);
+    /* background: rgb(84,86,87);
 background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 232, 0.236) 100%), url('../images/me-pool.jpg');
-    
+     */
+    background-image: linear-gradient(45deg, #d7ccbb,#d7ccbb29, #d7ccbb00), url(../images/me-pool.jpg);
     filter:blur(0.01vw);
 
     background-size: cover;
@@ -331,7 +334,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     top:60%; left:60%;
     transform:translate(-50%, -50%);
 
-    background-color: yellow;
+    background-color: #677D6A;
     padding-left:2%; padding-right:10%;
     width:80%;
     text-align:right;
@@ -339,14 +342,14 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     border-top-left-radius: 35px;
 }
 
-
 .name{
     font-size:6vh;
+    font-family:"Iansui", cursive;
 }
 .alias{
     font-size:4vh;
-    color:grey;
-    font-family: "Play";
+    color:#d7ccbb;
+    font-family: "Iansui", cursive;
 }
 
 /* .right-home-button{
@@ -384,15 +387,27 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
 }
 
 .homepage-link{
+    display:flex; flex-direction: column; justify-content: center;
+
     width: 60%; height: 10vh;
     align-self: center;
     text-align:center;
-    border: solid 2px red;
+    border: solid 3px #1A3636;
     border-radius: 20px;
-
     /* how to vertically align text? */
-    padding-top:5vh; padding: bottom 5vh; 
-    padding-left:5px; padding-right: 5px;
+    /* padding-top:5vh; padding: bottom 5vh;  */
+    padding-left:1vw; padding-right: 1vw;
+
+    color:#1A3636;
+    font-size: 3vh; text-decoration: none;
+
+    font-family: "Fredericka the Great", serif; letter-spacing: 2px;
+}
+.homepage-link:hover{
+    transition:0.35s ease;
+    background-color: #1A3636;
+    color: #d7ccbb;
+    scale: 1.04;
 }
 
 
@@ -466,7 +481,7 @@ background: linear-gradient(59deg, rgba(26, 30, 32, 0.847) 41%, rgba(90, 178, 23
     background-color: #D48862;
 }
 .footer-clg{
-    background-color: #538085;
+    background-color: #538085dc;
 }
 .footer-heading{
     width:100%;
